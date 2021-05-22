@@ -1,0 +1,133 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+/* images */
+#bg-top{
+    position: absolute;
+    z-index: 0;
+    right: -150px;
+    top: -60px;
+}
+
+/* content */
+.wrapper{
+    position:absolute;
+    background-color: hsl(240, 78%, 98%);
+}
+.pricing-heading{
+    z-index: 1;
+    color:hsl(232, 13%, 33%) ;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.annually,.monthly{
+    z-index: 1;
+    color: hsl(234, 14%, 74%);
+}
+
+.toogle-btn{
+    margin: 35px 0 35px 0;
+}
+
+.components{
+    z-index: 1;
+    border-radius:10px;
+    margin:10px auto 50px auto;
+    width: 330px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 1px 0px 3px 6px rgba(246,246,254,0.75);
+}
+
+.plan-features p{
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    margin: 0;
+}
+
+.plan-features p:first-child{
+    border-top: 1px solid hsl(234, 14%, 74%); 
+}
+
+.plan-name, .plan-cost-value{
+    font-weight: 900;
+}
+
+.plan-name{
+    padding-top: 30px;
+}
+
+.dollar{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.plan-cost-value{
+    font-size: 60px;
+}
+
+.plan-name, .plan-features{
+    color: hsl(233, 13%, 49%);
+    font-weight: 500;
+}
+.learn-more{
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding:7px 10px 0 10px;
+    margin: 5px 0 10px 0;
+    border-radius: 7px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+
+/* active states */
+.components:hover{
+    background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%)) ;
+    color: #fff;
+}
+
+.components:hover > .plan-name,.components:hover > .plan-features{
+    color: #fff;
+}
+
+.components:hover > .learn-more{
+    background: #fff;
+}
+
+.components:hover > .learn-more > .learn-more-content{
+    background: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%)) ;
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width:600px){
+    .wrapper{
+        width: 100%;
+        height: 100%;
+    }
+    .components{
+        display: inline-block;
+        margin: .01px;
+    }
+    .components:first-child{
+        margin-left: 180px;
+    }
+    .components:hover{
+        transform: scale(1.01);
+    }
+    #bg-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        z-index: 0;
+
+    }
+}
